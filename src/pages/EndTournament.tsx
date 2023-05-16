@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import useTournament from "../hooks/useTournament";
 import { toast } from "react-toastify";
 import Spinner from "../components/Spinner";
 
 export default function EndTournament() {
-    const {loading, error, endTournament} = useTournament();
+    const {loading, endTournament} = useTournament();
     const [winner1, setWinner1] = useState<string>();
     const [winner2, setWinner2] = useState<string>();
     const [winner3, setWinner3] = useState<string>();

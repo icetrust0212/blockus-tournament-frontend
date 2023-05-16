@@ -9,7 +9,7 @@ export default function MintTicket() {
   const { mintLoading, approveLoading, mintTicket, approveTicket } =
     useTicket();
   const onClick = () => {
-    if (amount == 0) {
+    if (amount === 0) {
       toast.warn("Please input valid number");
       return;
     }

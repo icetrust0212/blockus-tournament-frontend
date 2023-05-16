@@ -9,7 +9,7 @@ export default function MintUSDC() {
     const [amount, setAmount] = useState<number>(0);
     const {mintLoading, approveLoading, mintToken, approveToken} = useToken();
     const onClick = () => {
-        if (amount == 0) {
+        if (amount === 0) {
             toast.warn('Please input valid number');
             return;
         }

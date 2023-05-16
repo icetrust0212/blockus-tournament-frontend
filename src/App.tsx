@@ -1,11 +1,6 @@
-import Header from "./components/header";
-import Footer from "./components/footer";
 import {
   Routes,
   Route,
-  Navigate,
-  useNavigate,
-  useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Layout from "./layouts/Layout";
